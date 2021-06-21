@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- PRODUCT DATA LOAD -->
+    <script type="text/javascript" src="assets/products.json"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucek shop</title>
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+        <script src="scripts/index.js" async></script>
+    
+    <!-- JQUERY LOAD -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <!-- BOOTSTRAP LOAD -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <span><img class="header-img" src="assets/money-stack.svg" />Lowest Prices !!!</span>
+      <span><img class="header-img" src="assets/hand-truck.svg" />Free Shipment Above 500$ !!!</span>
+      <span><img class="header-img" src="assets/labrador-head.svg" />Free Vet Consultations !!!</span>
+      <span><img class="header-img" src="assets/piggy-bank.svg" />Attractive Promos !!!</span>
+    </header>
+
+    <div class="div-main">
+      <!-- NAVIGATION MAIN -->
+      <nav class="nav-main">
+        <a href="#"><img class="logo" src="assets/cat.jpg" /></a>
+         
+
+        <div id="push-right">
+          <a href="basket.html"
+            ><img id="basket-icon" src="assets/basket.svg"
+          /></a>
+          <span id="basket-price-enabled" class="basket-price-enabled"></span><span class="basket-price-enabled">$</span>
+          
+        </div>
+      </nav>
+      <hr class="horizontal">
+
+      <div class="categories-bar" id="nav-bar">
+      <button class="btn-type-filter-enabled filter-lvl1 btn-filter" value="all">All Products</button>
+  
+     
+        <button id="insert-before-marker" style="visibility:hidden"></button>
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          value="customFilter"
+        >
+          Filters
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item" href="#">PRICE: min: <input id="price-filter-min" class="input-narrow"/> max:<input id="price-filter-max" class="input-narrow"/> <button id="price-filter-ok-button">APPLY</button>
+            </a>
+          </li>
+          <li><a id="filter-ascending" class="dropdown-item" href="#">PRICE: Ascending</a></li>
+          <li><a id="filter-descending" class="dropdown-item" href="#">PRICE: Descending</a></li>
+      
+        </ul>
+        <input id="input-name-filter" placeholder="...search"></input>
+
+      </div>
+<hr>
+
+      
+      <!-- PRODUCT LIST -->
+      <div id="product-list">
+ 
+      </div>
+      <!-- FOOTER -->
+    </div>
+
+    <footer>design / logo © 2021 Łukasz Matysiak</footer>
+  </body>
+</html>

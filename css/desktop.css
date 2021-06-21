@@ -1,0 +1,349 @@
+* {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+body {
+  box-sizing: border-box;
+  background-color: lightyellow;
+  padding: 0;
+  margin: 0;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  font-size: 100%;
+  display: flex;
+  height: 5%;
+  max-height: 10%;
+  justify-content: space-around;
+  text-align: center;
+  align-items: baseline;
+  background-color: white;
+}
+.header-img {
+  width: 25px;
+  background-color: white;
+}
+
+/* NAVIGATION MAIN */
+
+.nav-main {
+ 
+
+  display: flex;
+  
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.logo {
+  height: auto;
+}
+
+#push-right{
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+}
+
+#basket-icon {
+  height: 4rem;
+  
+}
+#login-icon {
+  height: 2rem;
+}
+
+.horizontal {
+  
+  opacity:1 !important;
+  border: 2px solid black;
+ 
+ 
+}
+
+.select-option {
+  font-size:15px !important;
+}
+
+.basket-price-enabled {
+  font-size: 30px !important ;
+  color: black;
+  }
+
+.basket-price-disabled {
+  font-size: 30px !important;
+  color: red;
+  text-decoration:underline;
+}
+
+#btn-back-to-shop {
+  border: solid black;
+  background-color: lime;
+ 
+
+}
+
+.btn-type-filter-disabled {
+  border:solid black;
+}
+.btn-type-filter-enabled {
+  border: solid red;
+  color: red !important;
+}
+
+/* CONTENT */
+
+.div-main {
+  position: relative;
+  left: 2%;
+  margin-top: 1%;
+  align-self: center;
+  width: 95%;
+  border: solid 0.5rem black;
+  border-radius: 2rem;
+  padding: 1%;
+  min-height: 90vh;
+}
+
+/* NAVIGATION FILTERS */
+
+.categories-bar {
+  margin: 0;
+  padding: 0 !important;
+   
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display:flex;
+  
+}
+
+.rozwijana {
+  align-self: flex-end;
+}
+.category-button {
+  border: 2px solid black !important;
+}
+
+.input-narrow {
+  max-width: 75px;
+}
+
+.filter-lvl1 {
+  margin: 2px;
+  background-color: lightgreen;
+}
+
+.filter-lvl2 {
+  margin: 2px;
+  background-color: greenyellow
+}
+
+ 
+
+/* PRODUCT LIST */
+h3 {margin:0;
+padding:0}
+
+.add-btn-enabled {
+margin : 5px;
+background-color: lightgreen;
+
+}
+
+.add-btn-disabled {
+margin : 5px;
+background-color: lightpink;
+
+}
+
+#product-list {
+   
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-basis: 0;
+}
+.product-div {
+  
+  background-color: white;
+  margin:1% 0 1% 0;
+  min-width:300px;
+    display: flex;
+    flex-direction: column;
+    border: lightgray 3px solid;
+    border-radius: 10%;
+    width: 22%;
+    align-items: center;
+}
+
+.product-div>span{
+  font-size:24px;
+}
+
+.product-div:hover {
+  border: black 3px solid;
+  
+}
+.product-img-small{
+  margin-top:1%;
+  width:200px;
+  height:200px;
+  border-radius:20%;
+}
+.product-para{
+margin:1px;
+}
+
+.product-list-btns {
+  display:flex;
+  
+}
+
+.product-picture {
+  height: 200px;
+  max-width:200px;
+}
+
+
+
+.product-plusminus-btns {
+  display:flex;
+  flex-direction: column;
+  height:1px;
+}
+
+.add-btn {
+  color:darkgreen;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+}
+
+
+/* BASKET ITEMS */
+
+
+#shipment-options {
+  display: flex;
+  justify-content: center;
+}
+
+#basket-control-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.basket-list {
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+.basket-item {
+ justify-self: center;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+}
+
+.basket-control-buttons {
+  display:flex;
+  justify-content: center;
+  
+}
+
+.basket-item-single-name {
+  text-decoration: underline;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;;
+}
+
+.basket-item-single-amount {
+  width: 50px;
+  color: green;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.basket-item-single-option {
+width: 150px;
+text-align: left;
+}
+
+.basket-item-single-price {
+  width: 100px;
+}
+
+.remove-btn {
+  background-color: red;
+}
+
+.product-picture-minature {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+ 
+
+#totalValueCart {
+  color: green;
+}
+
+#purchase-list {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 400px;
+  min-width: 400px;
+}
+.input-label {
+width: 200px;
+}
+
+.input-text {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.plus-btn {
+  width:30px;
+}
+
+.minus-btn {
+  width:30px;
+}
+
+.remove-btn {
+  width: 30px;
+}
+
+/* PURCHASE ITEMS */
+
+#summary-div {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.input-required {
+  border: solid red;
+}
+
+.input-field-last {
+  display: flex;
+  justify-content: space-between;
+}
